@@ -292,7 +292,7 @@ endif		# end of CONFIG_ARCH_MT6795
 endif       # end of CONFIG_ARCH_MT6580
 
 ifeq (,$(filter $(CONFIG_MTK_PLATFORM), "mt8163"))
-obj-n   +=  irrx/
+#obj-n   +=  irrx/
 endif
 
 ifneq (,$(filter $(CONFIG_MTK_PLATFORM), "mt6752"))

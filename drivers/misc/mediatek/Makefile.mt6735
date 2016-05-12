@@ -9,7 +9,7 @@ ifneq ($(CONFIG_MTK_GIC),y)
 obj-y   += irq/
 endif
 
-obj-$(CONFIG_MTK_CPU_STRESS)	+= cpu_stress/
+#obj-$(CONFIG_MTK_CPU_STRESS)	+= cpu_stress/
 obj-$(CONFIG_MTK_LASTPC)	    += lastpc/
 
 obj-$(CONFIG_MTK_SYSTRACKER)   += systracker/
@@ -129,7 +129,7 @@ obj-y	+= pmic_wrap/
 obj-$(CONFIG_MTK_HIBERNATION) += hibcore/
 
 obj-y	+= accdet/
-obj-$(CONFIG_MTK_DUM_CHAR)	+= dum-char/
+#obj-$(CONFIG_MTK_DUM_CHAR)	+= dum-char/
 obj-$(CONFIG_MTK_SYSENV)	+= sysenv/
 
 ifdef CONFIG_CUSTOM_KERNEL_SSW
@@ -173,7 +173,7 @@ obj-y	+= spm/
 obj-$(CONFIG_USB_MTK_HDRC)	+= usb20/
 obj-$(CONFIG_MTK_USBFSH)	+= usb11/
 obj-$(CONFIG_USB_MU3D_DRV)	+= mu3d/
-obj-$(CONFIG_USB_MU3D_DRV)	+= mu3phy/
+#obj-$(CONFIG_USB_MU3D_DRV)	+= mu3phy/
 
 obj-$(CONFIG_MTK_TEST_XHCI)   +=  xhci_test/
 
@@ -186,7 +186,7 @@ obj-y	+= selinux_warning/
 # MTK PASR SW flow
 obj-$(CONFIG_MTKPASR)	+= mtkpasr/
 
-obj-$(CONFIG_MTK_TC1_FEATURE)	+= tc1_interface/
+#obj-$(CONFIG_MTK_TC1_FEATURE)	+= tc1_interface/
 
 #charge pump
 #obj-y	+= chargepump/
@@ -195,8 +195,8 @@ obj-$(CONFIG_MTK_TC1_FEATURE)	+= tc1_interface/
 
 obj-$(CONFIG_MTK_BTIF)	+= btif/
 obj-$(CONFIG_MTK_POWER_GS)	+= power_gs/
-obj-$(CONFIG_MTK_VIDEO) += video/
-obj-$(CONFIG_MTK_AEE_MRDUMP)	+= mrdump/
+#obj-$(CONFIG_MTK_VIDEO) += video/
+#obj-$(CONFIG_MTK_AEE_MRDUMP)	+= mrdump/
 obj-$(CONFIG_MTK_WMT_CCCI)	+= wmt_ccci/
 obj-$(CONFIG_MTK_VCOREFS)   += vcorefs/
 
